@@ -32,6 +32,9 @@ function adicionar() {
 
             numeros.push(Number(numero.value))
             nomes.push(nome.value)
+
+            numero.style.borderBottomColor = 'black'
+            nome.style.borderBottomColor = 'black'
         } else {
             numero.style.borderBottomColor = (!Enumero) ? 'black' : 'red'
             nome.style.borderBottomColor = (Eletra) ? 'black' : 'red'

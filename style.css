@@ -69,11 +69,12 @@ h1, img {
     margin-bottom: 70px;
 }
 
-.form input {
+.form input, .btn-reset {
     padding: 8px;
     border: none;
     font-size: 13pt;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .form .input {
@@ -109,4 +110,11 @@ table td {
 
 .form .input2 {
     border-bottom: 2px solid red;
+}
+
+.btn-reset {
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(185, 45, 45);
+    cursor: pointer;
 }

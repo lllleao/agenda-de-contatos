@@ -2,9 +2,10 @@ const form = document.getElementsByTagName('form')[0]
 const nome = document.getElementsByClassName('input')[0]
 const numero = document.getElementsByClassName('input')[1]
 const tabelaCorpo = document.getElementsByTagName('tbody')[0]
+const botaoReset = document.getElementsByClassName('btn-reset')[0]
 let linhas = ''
-const nomes = []
-const numeros = []
+let nomes = []
+let numeros = []
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -12,6 +13,15 @@ form.addEventListener('submit', function(e){
     adicionar()
 })
 
+botaoReset.addEventListener('click', function(){
+    tabelaCorpo.innerHTML = ''
+    
+    linhas = ''
+    nomes = []
+    numeros = []
+    nome.value = ''
+        numero.value = ''
+})
 
 
 function adicionar() {
@@ -43,3 +53,4 @@ function adicionar() {
         numero.value = ''
     }
 }
+
